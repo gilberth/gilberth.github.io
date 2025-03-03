@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Comic Neue', cursive;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #333333;
+  background-color: #f0f9ff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 600;
+  color: #4a90e2;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+a:hover {
+  color: #2d5a8e;
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  color: #ff6b6b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 25px;
+  border: 3px solid #ffd93d;
+  padding: 0.8em 1.6em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #ffd93d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px solid #ffd93d;
+  outline-offset: 2px;
+}
+
+input, textarea, select {
+  font-size: 1.1rem;
+  padding: 0.8em 1.2em;
+  border-radius: 15px;
+  border: 3px solid #87ceeb;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
