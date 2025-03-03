@@ -23,9 +23,9 @@ function App() {
 
   return (
     <div className="child-theme" style={{ minHeight: '100vh', background: 'rgba(255, 255, 255, 0.9)' }}>
-      <div className="story-container" style={{ backgroundImage: 'url("/images/forest-bg.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <img src="/images/unicorn.png" alt="Unicornio mágico" className="floating-animal left w-32 h-32 object-contain" />
-        <img src="/images/dragon.png" alt="Dragón amigable" className="floating-animal right w-32 h-32 object-contain" />
+      <div className="story-container" style={{ backgroundImage: 'url("./images/forest-bg.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <img src="./images/unicorn.png" alt="Unicornio mágico" className="floating-animal left w-32 h-32 object-contain" />
+        <img src="./images/dragon.png" alt="Dragón amigable" className="floating-animal right w-32 h-32 object-contain" />
         <div className="form-container">
           <StoryForm onGenerateStory={handleGenerateStory} />
         </div>
