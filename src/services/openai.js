@@ -1,12 +1,17 @@
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+  apiKey: import.meta.env.VITE_OPENAI_API_KEY || '',
   dangerouslyAllowBrowser: true
 });
 
 export const generateStory = async ({ childName, animalType, theme }) => {
   try {
+    // Check if API key is available
+    if (!import.meta.env.VITE_OPENAI_API_KEY) {
+      throw new Error('API key no disponible. Por favor, configura la variable de entorno VITE_OPENAI_API_KEY.');
+    }
+    
     const prompt = `Genera un cuento infantil en español de al menos 1000 palabras sobre ${childName} y ${animalType}. 
     El cuento debe tener un mensaje sobre ${theme}. 
     El cuento debe ser mágico, divertido y apropiado para niños, con un inicio, desarrollo y final feliz. 
